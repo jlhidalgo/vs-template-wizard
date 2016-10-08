@@ -18,4 +18,8 @@
     </References>
     <ProjectItem ReplaceParameters="true">Class.cs</ProjectItem>
   </TemplateContent>
+  <WizardExtension>
+    <Assembly>VSTemplateWizard, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=253964e98893b230</Assembly>
+    <FullClassName>VSTemplateWizard.WizardImplementation</FullClassName>
+  </WizardExtension>
 </VSTemplate>
