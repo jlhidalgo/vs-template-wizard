@@ -9,7 +9,7 @@ namespace $rootnamespace$
 	{
         static void Main(string[] args)
         {
-    Console.WriteLine("$customermessage$");
+    Console.WriteLine("$custommessage$");
         }
 	}
 }
