@@ -13,22 +13,18 @@ namespace VSTemplateWizard
 
         public void BeforeOpeningFile(ProjectItem projectItem)
         {
-            throw new NotImplementedException();
         }
 
         public void ProjectFinishedGenerating(Project project)
         {
-            throw new NotImplementedException();
         }
 
         public void ProjectItemFinishedGenerating(ProjectItem projectItem)
         {
-            throw new NotImplementedException();
         }
 
         public void RunFinished()
         {
-            throw new NotImplementedException();
         }
 
         public void RunStarted(object automationObject, Dictionary<string, string> replacementsDictionary, WizardRunKind runKind, object[] customParams)
