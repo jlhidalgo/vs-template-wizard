@@ -5,7 +5,11 @@ $endif$using System.Text;
 
 namespace $rootnamespace$
 {
-	class $safeitemrootname$
+	public class $safeitemrootname$
 	{
+        static void Main(string[] args)
+        {
+    Console.WriteLine("$customermessage$");
+        }
 	}
 }
