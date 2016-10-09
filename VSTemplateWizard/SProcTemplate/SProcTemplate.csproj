@@ -76,7 +76,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Class.cs" />
     <None Include="SProcTemplate.ico" />
   </ItemGroup>
   <ItemGroup>
