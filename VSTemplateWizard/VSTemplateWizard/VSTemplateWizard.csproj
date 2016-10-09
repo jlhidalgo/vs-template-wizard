@@ -57,9 +57,6 @@
     <Compile Include="SprocInputForm.Designer.cs">
       <DependentUpon>SprocInputForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserInputForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="WizardImplementation.cs" />
   </ItemGroup>
   <ItemGroup>

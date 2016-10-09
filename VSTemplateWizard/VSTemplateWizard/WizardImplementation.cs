@@ -8,7 +8,7 @@ namespace VSTemplateWizard
 {
     public class WizardImplementation : IWizard
     {
-        private UserInputForm _inputForm;
+        private SprocInputForm _inputForm;
         private string _customMessage;
 
         public void BeforeOpeningFile(ProjectItem projectItem)
@@ -33,10 +33,10 @@ namespace VSTemplateWizard
             {
                 // Display a form to the user. The form collects 
                 // input for the custom message.
-                _inputForm = new UserInputForm();
+                _inputForm = new SprocInputForm();
                 _inputForm.ShowDialog();
 
-                _customMessage = UserInputForm.CustomMessage;
+                _customMessage = SprocInputForm.CustomMessage;
 
                 // Add custom parameters.
                 replacementsDictionary.Add("$custommessage$", _customMessage);

@@ -12,9 +12,9 @@ namespace VSTemplateWizard
 {
     public partial class SprocInputForm : Form
     {
-        private string _customMessage;
+        private static string _customMessage;
 
-        public string CustomMessage {
+        public static string CustomMessage {
             get { return _customMessage; }
             set { _customMessage = value; }
         }
