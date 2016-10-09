@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.CustomMessageTxt = new System.Windows.Forms.TextBox();
             this.okBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -42,12 +42,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Custom Message:";
             // 
-            // textBox1
+            // CustomMessageTxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(110, 10);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(247, 20);
-            this.textBox1.TabIndex = 1;
+            this.CustomMessageTxt.Location = new System.Drawing.Point(110, 10);
+            this.CustomMessageTxt.Name = "CustomMessageTxt";
+            this.CustomMessageTxt.Size = new System.Drawing.Size(247, 20);
+            this.CustomMessageTxt.TabIndex = 1;
             // 
             // okBtn
             // 
@@ -57,6 +57,7 @@
             this.okBtn.TabIndex = 2;
             this.okBtn.Text = "OK";
             this.okBtn.UseVisualStyleBackColor = true;
+            this.okBtn.Click += new System.EventHandler(this.okBtn_Click);
             // 
             // SprocInputForm
             // 
@@ -64,7 +65,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(369, 86);
             this.Controls.Add(this.okBtn);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.CustomMessageTxt);
             this.Controls.Add(this.label1);
             this.Name = "SprocInputForm";
             this.Text = "Stored Procedure Template";
@@ -76,7 +77,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox CustomMessageTxt;
         private System.Windows.Forms.Button okBtn;
     }
 }

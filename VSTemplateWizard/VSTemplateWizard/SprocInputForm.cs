@@ -12,9 +12,22 @@ namespace VSTemplateWizard
 {
     public partial class SprocInputForm : Form
     {
+        private string _customMessage;
+
+        public string CustomMessage {
+            get { return _customMessage; }
+            set { _customMessage = value; }
+        }
+
         public SprocInputForm()
         {
             InitializeComponent();
+        }
+
+        private void okBtn_Click(object sender, EventArgs e)
+        {
+            _customMessage = CustomMessageTxt.Text;
+            this.Close();
         }
     }
 }
