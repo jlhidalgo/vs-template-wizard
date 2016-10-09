@@ -2,13 +2,13 @@
 <VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
     <Name>SProcTemplate</Name>
-    <Description>SProcTemplate</Description>
+    <Description>Stored procedure template with details</Description>
     <Icon>SProcTemplate.ico</Icon>
     <TemplateID>a39b5bed-1409-4723-80d5-cf260c58c749</TemplateID>
-    <ProjectType>CSharp</ProjectType>
+    <ProjectType>SQLDB</ProjectType>
     <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
-    <DefaultName>Class.cs</DefaultName>
+    <DefaultName>Code.sql</DefaultName>
   </TemplateData>
   <TemplateContent>
     <References>
@@ -16,7 +16,7 @@
         <Assembly>System</Assembly>
       </Reference>
     </References>
-    <ProjectItem ReplaceParameters="true">Class.cs</ProjectItem>
+    <ProjectItem TargetFileName="$fileinputname$.sql" ReplaceParameters="true">Code.sql</ProjectItem>
   </TemplateContent>
   <WizardExtension>
     <Assembly>VSTemplateWizard, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=253964e98893b230</Assembly>
