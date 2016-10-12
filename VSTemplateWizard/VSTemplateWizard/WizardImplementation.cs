@@ -9,7 +9,11 @@ namespace VSTemplateWizard
     public class WizardImplementation : IWizard
     {
         private SprocInputForm _inputForm;
-        private string _customMessage;
+        private string _dbName;
+        private string _sprocName;
+        private string _rollback;
+        private string _action;
+        private string _item;
 
         public void BeforeOpeningFile(ProjectItem projectItem)
         {
@@ -36,10 +40,18 @@ namespace VSTemplateWizard
                 _inputForm = new SprocInputForm();
                 _inputForm.ShowDialog();
 
-                _customMessage = SprocInputForm.CustomMessage;
+                _dbName = SprocInputForm.DatabaseName;
+                _sprocName = SprocInputForm.SprocName;
+                _rollback = SprocInputForm.Rollback;
+                _action = SprocInputForm.Action;
+                _item = SprocInputForm.Item;
 
                 // Add custom parameters.
-                replacementsDictionary.Add("$custommessage$", _customMessage);
+                replacementsDictionary.Add("$databasename$", _dbName);
+                replacementsDictionary.Add("$sprocname$", _sprocName);
+                replacementsDictionary.Add("$rollbackrequired$", _rollback);
+                replacementsDictionary.Add("$action$", _action);
+                replacementsDictionary.Add("$itemnumber$", _item);
             }
             catch (Exception ex)
             {

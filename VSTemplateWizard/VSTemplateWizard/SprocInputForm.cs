@@ -12,12 +12,49 @@ namespace VSTemplateWizard
 {
     public partial class SprocInputForm : Form
     {
-        private static string _customMessage;
+        #region properties
+        private static string _dbname;
 
-        public static string CustomMessage {
-            get { return _customMessage; }
-            set { _customMessage = value; }
+        public static string DatabaseName
+        {
+            get { return _dbname; }
+            set { _dbname = value; }
         }
+
+        private static string _sprocname;
+
+        public static string SprocName
+        {
+            get { return _sprocname; }
+            set { _sprocname = value; }
+        }
+
+        private static string _rollback;
+
+        public static string Rollback
+        {
+            get { return _rollback; }
+            set { _rollback = value; }
+        }
+
+        private static string _action;
+
+        public static string Action
+        {
+            get { return _action; }
+            set { _action = value; }
+        }
+
+        private static string _item;
+
+        public static string Item
+        {
+            get { return _item; }
+            set { _item = value; }
+        }
+
+        #endregion properties
+
 
         public SprocInputForm()
         {
@@ -26,8 +63,18 @@ namespace VSTemplateWizard
 
         private void okBtn_Click(object sender, EventArgs e)
         {
-            _customMessage = CustomMessageTxt.Text;
+            _dbname = dbnameTxt.Text;
+            _sprocname = sprocnameTxt.Text;
+            _rollback = rollbackCmb.Text;
+            _action = actionCmb.Text;
+            _item = itemTxt.Text;
             this.Close();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
