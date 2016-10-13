@@ -53,12 +53,54 @@ namespace VSTemplateWizard
             set { _item = value; }
         }
 
+        private static string _revision;
+
+        public static string Revision
+        {
+            get { return _revision; }
+            set { _revision = value; }
+        }
+
+        private static string _username;
+
+        public static string Username
+        {
+            get { return _username; }
+            set { _username = value; }
+        }
+
+        private static string _task;
+
+        public static string Task
+        {
+            get { return _task; }
+            set { _task = value; }
+        }
+
+        private static string _comments;
+
+        public static string Comments
+        {
+            get { return _comments; }
+            set { _comments = value; }
+        }
+
+        private static string _date;
+
+        public static string Date
+        {
+            get { return _date; }
+            set { _date = value; }
+        }
+
+
         #endregion properties
 
 
         public SprocInputForm()
         {
             InitializeComponent();
+            rollbackCmb.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
         private void okBtn_Click(object sender, EventArgs e)
@@ -68,6 +110,11 @@ namespace VSTemplateWizard
             _rollback = rollbackCmb.Text;
             _action = actionCmb.Text;
             _item = itemTxt.Text;
+            _revision = revisionTxt.Text;
+            _username = usernameTxt.Text;
+            _date = DateTime.Now.ToString("MM/dd/yyyy");
+            _task = taskTxt.Text;
+            _comments = commentsTxt.Text;
             this.Close();
         }
 
