@@ -27,7 +27,7 @@ GO
 *
 *    History:
 *    Revision		By				Date			US/Bug			Task			Change
-*	 $revision$		$username$		$date$			$itemnumber$	$tasknumber$	$changecomments$
+*	 $revision$		$editorname$	$date$			$itemnumber$	$tasknumber$	$changecomments$
 *
 **************************************************************************************************************************************************************/
 ALTER PROCEDURE [dbo].[$sprocname$]     
