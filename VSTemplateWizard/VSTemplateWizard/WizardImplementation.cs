@@ -46,6 +46,7 @@ namespace VSTemplateWizard
                 replacementsDictionary.Add("$date$", SprocInputForm.Date);
                 replacementsDictionary.Add("$tasknumber$", SprocInputForm.Task);
                 replacementsDictionary.Add("$changecomments$", SprocInputForm.Comments);
+
             }
             catch (Exception ex)
             {
