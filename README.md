@@ -22,7 +22,7 @@ The result is a database script that not only contains the documentation details
 * Fill the form data accordingly and click `OK`.
 * A `Code1.sql` file is created and added to the project. This new file contains the database script with enough code to create/alter a stored procedure.
 
-### Alernate steps to use the generated Visual Studio Extension
+### Alternate steps to use the generated Visual Studio Extension
 * Download the repository
 * Open the project with Visual Studio 2015
 * Press `F5`. The application is executed.
