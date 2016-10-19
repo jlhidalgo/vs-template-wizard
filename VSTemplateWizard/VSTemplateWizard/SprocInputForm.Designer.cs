@@ -41,14 +41,14 @@
             this.sprocnameTxt = new System.Windows.Forms.TextBox();
             this.dbnameTxt = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.revisionTxt = new System.Windows.Forms.TextBox();
-            this.usernameTxt = new System.Windows.Forms.TextBox();
-            this.taskTxt = new System.Windows.Forms.TextBox();
             this.commentsTxt = new System.Windows.Forms.TextBox();
+            this.taskTxt = new System.Windows.Forms.TextBox();
+            this.usernameTxt = new System.Windows.Forms.TextBox();
+            this.revisionTxt = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.cancelBtn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -56,6 +56,7 @@
             // 
             // okBtn
             // 
+            this.okBtn.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.okBtn.Location = new System.Drawing.Point(247, 427);
             this.okBtn.Name = "okBtn";
             this.okBtn.Size = new System.Drawing.Size(75, 23);
@@ -192,32 +193,38 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Revision details";
             // 
-            // label1
+            // commentsTxt
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Revision #:";
+            this.commentsTxt.Location = new System.Drawing.Point(85, 103);
+            this.commentsTxt.MaxLength = 80;
+            this.commentsTxt.Multiline = true;
+            this.commentsTxt.Name = "commentsTxt";
+            this.commentsTxt.Size = new System.Drawing.Size(282, 89);
+            this.commentsTxt.TabIndex = 20;
             // 
-            // label7
+            // taskTxt
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(18, 54);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(61, 13);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "User name:";
+            this.taskTxt.Location = new System.Drawing.Point(85, 77);
+            this.taskTxt.MaxLength = 7;
+            this.taskTxt.Name = "taskTxt";
+            this.taskTxt.Size = new System.Drawing.Size(100, 20);
+            this.taskTxt.TabIndex = 19;
             // 
-            // label8
+            // usernameTxt
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(35, 80);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(44, 13);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "Task #:";
+            this.usernameTxt.Location = new System.Drawing.Point(85, 51);
+            this.usernameTxt.Name = "usernameTxt";
+            this.usernameTxt.Size = new System.Drawing.Size(100, 20);
+            this.usernameTxt.TabIndex = 17;
+            this.usernameTxt.Text = "Juan L. Hidalgo";
+            // 
+            // revisionTxt
+            // 
+            this.revisionTxt.Location = new System.Drawing.Point(85, 24);
+            this.revisionTxt.Name = "revisionTxt";
+            this.revisionTxt.Size = new System.Drawing.Size(54, 20);
+            this.revisionTxt.TabIndex = 16;
+            this.revisionTxt.Text = "001";
             // 
             // label9
             // 
@@ -228,38 +235,32 @@
             this.label9.TabIndex = 3;
             this.label9.Text = "Comments:";
             // 
-            // revisionTxt
+            // label8
             // 
-            this.revisionTxt.Location = new System.Drawing.Point(85, 24);
-            this.revisionTxt.Name = "revisionTxt";
-            this.revisionTxt.Size = new System.Drawing.Size(54, 20);
-            this.revisionTxt.TabIndex = 16;
-            this.revisionTxt.Text = "001";
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(35, 80);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(44, 13);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "Task #:";
             // 
-            // usernameTxt
+            // label7
             // 
-            this.usernameTxt.Location = new System.Drawing.Point(85, 51);
-            this.usernameTxt.Name = "usernameTxt";
-            this.usernameTxt.Size = new System.Drawing.Size(100, 20);
-            this.usernameTxt.TabIndex = 17;
-            this.usernameTxt.Text = "Juan L. Hidalgo";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(18, 54);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(61, 13);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "User name:";
             // 
-            // taskTxt
+            // label1
             // 
-            this.taskTxt.Location = new System.Drawing.Point(85, 77);
-            this.taskTxt.MaxLength = 7;
-            this.taskTxt.Name = "taskTxt";
-            this.taskTxt.Size = new System.Drawing.Size(100, 20);
-            this.taskTxt.TabIndex = 19;
-            // 
-            // commentsTxt
-            // 
-            this.commentsTxt.Location = new System.Drawing.Point(85, 103);
-            this.commentsTxt.MaxLength = 80;
-            this.commentsTxt.Multiline = true;
-            this.commentsTxt.Name = "commentsTxt";
-            this.commentsTxt.Size = new System.Drawing.Size(282, 89);
-            this.commentsTxt.TabIndex = 20;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(18, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Revision #:";
             // 
             // cancelBtn
             // 
